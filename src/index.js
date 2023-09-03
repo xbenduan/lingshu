@@ -1,10 +1,20 @@
 #!/usr/bin/env node
-const comm = require("commander");
+const { program } = require('commander');
 
-const program = comm.program;
+const test = (e) => {
+  console.log('test', e);
+};
 
 program
-    .option("-e --env [env]", "【选填】指定运行环境 默认：--env=uat")
-    .option("-d --dir <dir>", "【必填】指定运行项目 示例：--dir=p099");
+  .version('0.0.1', '-v,--version', '查看当前cli版本')
+  .helpOption('-h,--help', '显示帮助信息')
+  .description('欢迎使用lgs, 期望与您共建');
+
+program
+  .command('test')
+  .option('-u --update', '更新模板项目状态', false)
+  .option('-a --add <env>', '添加更新目录', '')
+  .description('测试命令')
+  .action(test);
 
 program.parse(process.argv);

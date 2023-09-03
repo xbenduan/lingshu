@@ -4,7 +4,7 @@
   "description": "立志成为最好的模版工程更新工具; 立志成为最方便二开的模版工程更新工具",
   "main": "./src/index.js",
   "bin": {
-    "ling": "./src/mini-ci/index.js"
+    "ling": "./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
     "index.js"
   ],
   "devDependencies": {
-    "eslint": "^8.47.0"
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
   },
   "dependencies": {
     "commander": "^11.0.0",
