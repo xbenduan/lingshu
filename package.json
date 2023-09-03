@@ -1,0 +1,35 @@
+{
+  "name": "lingshu",
+  "version": "0.0.1",
+  "description": "立志成为最好的模版工程更新工具; 立志成为最方便二开的模版工程更新工具",
+  "main": "./src/index.js",
+  "bin": {
+    "ling": "./src/mini-ci/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbenduan/lingshu.git"
+  },
+  "keywords": [
+    "cli",
+    "template"
+  ],
+  "author": "xbenduan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xbenduan/lingshu/issues"
+  },
+  "homepage": "https://github.com/xbenduan/lingshu#readme",
+  "files": [
+    "src",
+    "README.md",
+    "index.js"
+  ],
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "miniprogram-ci": "^1.9.8"
+  }
+}
