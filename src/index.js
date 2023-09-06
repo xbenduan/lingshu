@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 const { program } = require('commander');
-
-const test = (e) => {
-  console.log('test', e);
-};
+const { test } = require('./temp/index');
 
 program
   .version('0.0.1', '-v,--version', '查看当前cli版本')
@@ -18,3 +15,9 @@ program
   .action(test);
 
 program.parse(process.argv);
+
+/**
+ * @typedef {Object} RParam
+ * @property {Number} e
+ * @property {Number} a
+ */

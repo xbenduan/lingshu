@@ -4,7 +4,10 @@
   "description": "立志成为最好的模版工程更新工具; 立志成为最方便二开的模版工程更新工具",
   "main": "./src/index.js",
   "bin": {
-    "ling": "./src/index.js"
+    "lgs": "./src/index.js"
+  },
+  "scripts": {
+    "demo": "node ./src/index"
   },
   "repository": {
     "type": "git",
