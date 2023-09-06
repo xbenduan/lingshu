@@ -7,7 +7,7 @@
     "lgs": "./src/index.js"
   },
   "scripts": {
-    "demo": "node ./src/index"
+    "demo": "node ./src/index test --add=777"
   },
   "repository": {
     "type": "git",
