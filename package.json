@@ -7,7 +7,7 @@
     "lgs": "./src/index.js"
   },
   "scripts": {
-    "demo": "node ./src/index test --add=777"
+    "demo": "node ./src/index test -u"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "eslint-plugin-import": "^2.25.2"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.13",
     "commander": "^11.0.0",
     "miniprogram-ci": "^1.9.8"
   }

@@ -10,7 +10,8 @@ program
 program
   .command('test')
   .option('-u --update', '更新模板项目状态', false)
-  .option('-a --add <env>', '添加更新目录', '')
+  .option('-i --init', '添加更新目录', false)
+  .option('-o --other', '添加更新目录', false)
   .description('测试命令')
   .action(test);
 
